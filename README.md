@@ -1,5 +1,5 @@
-# 6Companies 30days Challenge
+# 6-Companies 30-days Challenge
 
 ## Goldman Sachs
-`Group Anagram`
-`Minimum Size Subarray`
+* `Group Anagram`
+* `Minimum Size Subarray`
