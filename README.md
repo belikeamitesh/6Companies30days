@@ -5,3 +5,4 @@
 * `Minimum Size Subarray`
 * `Decode String`
 * `Kid which gets the damaged toy`
+* `Total Decoded Messages`
