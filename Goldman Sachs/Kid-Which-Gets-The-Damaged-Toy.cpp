@@ -11,8 +11,8 @@ using namespace std;
 int calc_last_position(int n,int items,int initial_point)
 {
     // starting from initial point we can reach begining after - n-k+1 positions
-    int positions_before_begin = n-initial_point+1;
-    if(items<=positions_before_begin)
+    int positions_left_before_begin_of_circle = n-initial_point+1;
+    if(items<=positions_left_before_begin_of_circle)
     {
         //distribute m items to people after inital position -> inital postion + m
         return items + initial_point -1;
