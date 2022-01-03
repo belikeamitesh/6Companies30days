@@ -10,3 +10,5 @@
 * `Find missing and repeating`
 * `Greatest common divisors of string`
 * `Run length encoding`
+* `Find max 10 numbers in a list having 10M entries`
+* `Find total number of Squares in a N*N chessboard`
