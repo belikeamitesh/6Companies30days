@@ -3,44 +3,49 @@
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 
+// { Driver Code Starts
 #include<bits/stdc++.h>
 using namespace std;
 
+ // } Driver Code Ends
 class Solution {
 	public:
-	    const int MOD = 1e9+7;
-	    int solve(string str, int ind, vector<int>&dp)
-	    {
-	        if(ind == str.size())
-	            return 1;
-	        if(dp[ind] >= 0)
-	            return dp[ind];
-	        else if(str[ind] == '0')
-	            dp[ind] = 0;
-	        else if(ind == str.size()-1)
-	        {
-	            dp[ind] = 1;
-	        }
-	        else if(str[ind] == '1')
-	        {
-	           dp[ind] = (solve(str, ind+1, dp)%MOD + solve(str, ind+2, dp)%MOD)%MOD;
-	        }
-	        else if(str[ind] == '2')
-	        {
-	            if(str[ind+1] <= '6' && str[ind+1] >= '0')
-	                dp[ind] = (solve(str, ind+2, dp)%MOD + solve(str, ind+1, dp)%MOD)%MOD;
-	            else
-	                dp[ind] = solve(str, ind+1, dp) % MOD;
-	        }
-	        else
-	            dp[ind] = solve(str, ind+1, dp) % MOD;
-	        return dp[ind];
-	    }
+	 const int MOD = 1e9+7;
+	 long long dp[10004];
+	 int getcount(string str,int n)
+	 {
+	     if(str[0]=='0' || str[0]==' ')
+	     {
+	         return 0;
+	     }
+	     // reached the first character of the string ( n=0 or n=1) so there is only 1 way to manupulate it	  
+	     if(n==0 || n==1)
+	     {
+	         return 1;
+	     }
+	     if(dp[n]!=-1)
+	     {
+	         return dp[n]%MOD;
+	     }
+	     int count=0;
+	     //last character of string is >0 so keep count of ways to mapuluate the left n-1 characters
+	     if(str[n-1]>'0')
+	     {
+	         count = getcount(str,n-1)%MOD;
+	     }
+	     // if 2nd last char = 20 to 26 or 11 to 19 then keep calculating ways to manupulate the left n-2 characters
+	     if(str[n-2]=='1' || (str[n-2]=='2' && str[n-1]<'7'))
+	     {
+	         count = (count%MOD + getcount(str,n-2)%MOD)%MOD;
+	     }
+	    //store that in dp[n] and return it
+	     return dp[n]=count%MOD;
+	 }
 		int CountWays(string str){
 		    // Code here
 		    int n = str.size();
-		    vector<int>dp(n, -1);
-		    return solve(str, 0, dp);
+		    memset(dp,-1,sizeof dp);
+		    return getcount(str,n)%MOD;
 		}
 
 };
