@@ -26,6 +26,7 @@ class Solution{
                     left++;
                 }
             }
+         // number of contigous arrays after adding elment a[i] to previous window
             ans+=right-left+1;
             right++;
         }
