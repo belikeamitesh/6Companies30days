@@ -16,3 +16,7 @@
 * `Overlapping Rectangles`
 * `Ugly Numbers`
 * `Count subarrays with product less than k`
+
+
+## Amazon
+* `Maximum Profit`
