@@ -21,4 +21,5 @@
 ## Amazon
 * `Maximum Profit`
 * `Longest mountain in array`
-* `IPL 2021 Match Day 2`
+* `IPL 2021 Match Day 2 + Maximum of all subarray of size k`
+* `First Non repeating character in a stream`
