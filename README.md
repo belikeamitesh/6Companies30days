@@ -25,3 +25,6 @@
 * `First Non repeating character in a stream`
 * `Nuts and bolts`
 * `Phone Directory`
+* `Rotting Oranges`
+* `Delete m nodes after n nodes in a linked list`
+* `Coloumn name from a given coloumn number`
