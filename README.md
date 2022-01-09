@@ -29,3 +29,4 @@
 * `Delete m nodes after n nodes in a linked list`
 * `Coloumn name from a given coloumn number`
 * `Serialize and deserialize a binary tree`
+* `Matrix Chain Multiplication`
