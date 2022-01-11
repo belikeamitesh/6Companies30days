@@ -32,4 +32,4 @@
 * `Matrix Chain Multiplication`
 
 ## Microsoft
-`Traverse Matrix in Sprial form`
+* `Traverse Matrix in Sprial form`
