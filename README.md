@@ -33,3 +33,12 @@
 
 ## Microsoft
 * `Traverse Matrix in Sprial form`
+* `Connect nodes at same level`
+* `Count number of subtrees having given sum`
+* `Find all four sum numbers`
+* `Generate Binary number`
+* `Possible words from phone Digits
+* `Prerequisite tasks`
+* `Rotate by 90`
+* `Stickler theif`
+* `Unit area of largest regions of 1`
